@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "login_and_registration_system",
+					"name" : "DatabaseProject",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "login_and_registration_system::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-login_and_registration_system-Debug-9547ffb3667bd1dcd5e8.json",
-					"name" : "login_and_registration_system",
+					"id" : "DatabaseProject::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DatabaseProject-Debug-bd3d125493935f830a71.json",
+					"name" : "DatabaseProject",
 					"projectIndex" : 0
 				}
 			]

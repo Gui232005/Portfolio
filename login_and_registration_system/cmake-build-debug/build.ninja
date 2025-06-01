@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: login_and_registration_system
+# Project: DatabaseProject
 # Configurations: Debug
 # =============================================================================
 
@@ -41,49 +41,53 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target login_and_registration_system
+# Object build statements for EXECUTABLE target DatabaseProject
 
 
 #############################################
-# Order-only phony target for login_and_registration_system
+# Order-only phony target for DatabaseProject
 
-build cmake_object_order_depends_target_login_and_registration_system: phony || CMakeFiles/login_and_registration_system.dir
+build cmake_object_order_depends_target_DatabaseProject: phony || CMakeFiles/DatabaseProject.dir
 
-build CMakeFiles/login_and_registration_system.dir/main.cpp.obj: CXX_COMPILER__login_and_registration_system_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/main.cpp || cmake_object_order_depends_target_login_and_registration_system
-  DEP_FILE = CMakeFiles\login_and_registration_system.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\login_and_registration_system.dir
-  OBJECT_FILE_DIR = CMakeFiles\login_and_registration_system.dir
+build CMakeFiles/DatabaseProject.dir/main.cpp.obj: CXX_COMPILER__DatabaseProject_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/main.cpp || cmake_object_order_depends_target_DatabaseProject
+  DEP_FILE = CMakeFiles\DatabaseProject.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Program Files/PostgreSQL/17/include"
+  OBJECT_DIR = CMakeFiles\DatabaseProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\DatabaseProject.dir
 
-build CMakeFiles/login_and_registration_system.dir/useful.cpp.obj: CXX_COMPILER__login_and_registration_system_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/useful.cpp || cmake_object_order_depends_target_login_and_registration_system
-  DEP_FILE = CMakeFiles\login_and_registration_system.dir\useful.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\login_and_registration_system.dir
-  OBJECT_FILE_DIR = CMakeFiles\login_and_registration_system.dir
+build CMakeFiles/DatabaseProject.dir/register.cpp.obj: CXX_COMPILER__DatabaseProject_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/register.cpp || cmake_object_order_depends_target_DatabaseProject
+  DEP_FILE = CMakeFiles\DatabaseProject.dir\register.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Program Files/PostgreSQL/17/include"
+  OBJECT_DIR = CMakeFiles\DatabaseProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\DatabaseProject.dir
 
-build CMakeFiles/login_and_registration_system.dir/register.cpp.obj: CXX_COMPILER__login_and_registration_system_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/register.cpp || cmake_object_order_depends_target_login_and_registration_system
-  DEP_FILE = CMakeFiles\login_and_registration_system.dir\register.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\login_and_registration_system.dir
-  OBJECT_FILE_DIR = CMakeFiles\login_and_registration_system.dir
+build CMakeFiles/DatabaseProject.dir/useful.cpp.obj: CXX_COMPILER__DatabaseProject_unscanned_Debug C$:/Users/guisi/OneDrive/Ambiente$ de$ Trabalho/Portfolio/login_and_registration_system/useful.cpp || cmake_object_order_depends_target_DatabaseProject
+  DEP_FILE = CMakeFiles\DatabaseProject.dir\useful.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Program Files/PostgreSQL/17/include"
+  OBJECT_DIR = CMakeFiles\DatabaseProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\DatabaseProject.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target login_and_registration_system
+# Link build statements for EXECUTABLE target DatabaseProject
 
 
 #############################################
-# Link the executable login_and_registration_system.exe
+# Link the executable DatabaseProject.exe
 
-build login_and_registration_system.exe: CXX_EXECUTABLE_LINKER__login_and_registration_system_Debug CMakeFiles/login_and_registration_system.dir/main.cpp.obj CMakeFiles/login_and_registration_system.dir/useful.cpp.obj CMakeFiles/login_and_registration_system.dir/register.cpp.obj
+build DatabaseProject.exe: CXX_EXECUTABLE_LINKER__DatabaseProject_Debug CMakeFiles/DatabaseProject.dir/main.cpp.obj CMakeFiles/DatabaseProject.dir/register.cpp.obj CMakeFiles/DatabaseProject.dir/useful.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\login_and_registration_system.dir
+  LINK_LIBRARIES = -llibpq  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/PROGRA~1/POSTGR~1/17/lib
+  OBJECT_DIR = CMakeFiles\DatabaseProject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = login_and_registration_system.exe
-  TARGET_IMPLIB = liblogin_and_registration_system.dll.a
-  TARGET_PDB = login_and_registration_system.exe.dbg
+  TARGET_FILE = DatabaseProject.exe
+  TARGET_IMPLIB = libDatabaseProject.dll.a
+  TARGET_PDB = DatabaseProject.exe.dbg
 
 
 #############################################
@@ -111,7 +115,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build login_and_registration_system: phony login_and_registration_system.exe
+build DatabaseProject: phony DatabaseProject.exe
 
 # =============================================================================
 # Folder targets.
@@ -121,7 +125,7 @@ build login_and_registration_system: phony login_and_registration_system.exe
 #############################################
 # Folder: C:/Users/guisi/OneDrive/Ambiente de Trabalho/Portfolio/login_and_registration_system/cmake-build-debug
 
-build all: phony login_and_registration_system.exe
+build all: phony DatabaseProject.exe
 
 # =============================================================================
 # Built-in targets

@@ -1,6 +1,8 @@
 #ifndef LOGIN_AND_REGISTRATION_SYSTEM_REGISTER_H
 #define LOGIN_AND_REGISTRATION_SYSTEM_REGISTER_H
 
+#include <iostream>
+#include <libpq-fe.h>
 #include <string>
 
 using namespace std;

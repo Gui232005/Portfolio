@@ -1,3 +1,3 @@
-C:/Users/guisi/OneDrive/Ambiente de Trabalho/Portfolio/login_and_registration_system/cmake-build-debug/CMakeFiles/login_and_registration_system.dir
+C:/Users/guisi/OneDrive/Ambiente de Trabalho/Portfolio/login_and_registration_system/cmake-build-debug/CMakeFiles/DatabaseProject.dir
 C:/Users/guisi/OneDrive/Ambiente de Trabalho/Portfolio/login_and_registration_system/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/guisi/OneDrive/Ambiente de Trabalho/Portfolio/login_and_registration_system/cmake-build-debug/CMakeFiles/rebuild_cache.dir
