@@ -2,8 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:new_amazon/components/bottomNavigation.dart';
 import 'components/app_bar.dart' as custom_app_bar;
 import 'routing.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,15 +39,61 @@ class MyHomePage extends StatelessWidget {
         child: GestureDetector(
           child: Column(
             children: [
-              Row(
-                children: [
-                  
-                ],
-              )
-            ]
-          )
+              SizedBox(
+                height: 60,
+                child: Center(
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(fontSize: 17, color: Colors.black),
+                      children: [
+                        TextSpan(text: 'Welcome to the '),
+                        TextSpan(
+                          text: 'NextBuy',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextSpan(text: ' App'),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                child: CarouselSlider(
+                  options: CarouselOptions(
+                    height: 50,
+                    autoPlay: true,
+                    enlargeCenterPage: true,
+                    aspectRatio: 16 / 9,
+                    viewportFraction: 0.8,
+                  ),
+                  items: [
+                    Container(
+                      color: Colors.red,
+                      child: Center(child: Text('Item 1')),
+                    ),
+                    Container(
+                      color: Colors.green,
+                      child: Center(child: Text('Item 2')),
+                    ),
+                    Container(
+                      color: Colors.blue,
+                      child: Center(child: Text('Item 3')),
+                    ),
+                    Container(
+                      color: Colors.yellow,
+                      child: Center(child: Text('Item 4')),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 }

@@ -61,7 +61,17 @@ class _NotificationsPageState extends State<NotificationsPage> {
                         onPressed: () {
                           setState(() {
                             notifications.removeAt(index);
-                            selectedIndexes.remove(index);
+                            // Atualiza os índices selecionados
+                            Set<int> updated = {};
+                            for (var i in selectedIndexes) {
+                              if (i == index) continue;
+                              if (i > index) {
+                                updated.add(i - 1);
+                              } else {
+                                updated.add(i);
+                              }
+                            }
+                            selectedIndexes = updated;
                           });
                         },
                       ),
