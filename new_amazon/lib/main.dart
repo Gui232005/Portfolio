@@ -63,13 +63,14 @@ class MyHomePage extends StatelessWidget {
               SizedBox(
                 child: CarouselSlider(
                   options: CarouselOptions(
-                    height: 50,
+                    height: 100,
                     autoPlay: true,
                     enlargeCenterPage: true,
                     aspectRatio: 16 / 9,
                     viewportFraction: 0.8,
                   ),
                   items: [
+                    //Here we will insert the most popular items
                     Container(
                       color: Colors.red,
                       child: Center(child: Text('Item 1')),
