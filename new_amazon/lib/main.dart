@@ -6,9 +6,14 @@ import 'package:new_amazon/components/bottomNavigation.dart';
 import 'components/app_bar.dart' as custom_app_bar;
 import 'routing.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  await Supabase.initialize(
+    url: 'https://vmcrggrnvyldcbmvuicw.supabase.co',
+    anonKey: 'sbp_cf10d416cea421f6df26fb7263afde6ffc936aae',
+  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
