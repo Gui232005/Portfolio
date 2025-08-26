@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import cPlusLogo from './assets/cPlus.png'
+import flutterLogo from './assets/flutter.png'
+import cLogo from './assets/c.png'
 import './App.css'
 
 function App() {
@@ -8,26 +10,44 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div id="myFace">
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+        <p id="name">𝔾𝕦𝕚𝕝𝕙𝕖𝕣𝕞𝕖 𝕊𝕚𝕝𝕧𝕒</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+
+      <p>
+        Hello! I'm Guilherme, a Computer Science student at the Polythecnic of Viseu. I'm passionate about technology and programming, and I'm always eager to learn new things and take on new challenges. Welcome to my portfolio!
       </p>
+
+      {/* here i will add a line to divide two parts */}
+
+      <h2 style={{ textAlign: 'center', marginTop: '7em' }}>Programming languages I'm comfortable with:</h2>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-user"></i></p>
+            <img src={flutterLogo} className="logoFlutter" alt="Flutter logo" style={{ alignContent: 'center' }} />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-check"></i></p>
+            <img src={cPlusLogo} className="logoCPlus" alt="C++ logo" style={{ alignContent: 'center' }} />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-smile-o"></i></p>
+            <img src={cLogo} className="logoC" alt="C logo" style={{ alignContent: 'center' }} />
+          </div>
+        </div>
+
+
+      </div>
+
     </>
   )
 }

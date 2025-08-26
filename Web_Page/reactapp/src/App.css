@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -11,9 +10,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +23,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +41,61 @@
 
 .read-the-docs {
   color: #888;
+}
+
+#name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#myFace {
+  right: 0%;
+  top: 2%;
+  left: 0%;
+}
+
+/* Programming language i'm feel comfortable with */
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 0 -5px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 50px;
 }
