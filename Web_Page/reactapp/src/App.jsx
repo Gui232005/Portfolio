@@ -52,7 +52,36 @@ function App() {
         </div>
       </div>
 
-      
+      {/*Have a timeline to showcase my projects*/}
+
+      <h2 style={{ textAlign: 'center', marginTop: '4em' }}>My Journey So Far</h2>
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2 style={{ color: '#FF9F55' }}>2023</h2>
+            <p style={{ color: '#888' }}>Start my computer science course</p>
+          </div>
+        </div>
+        <div className='container right'>
+          <div class="content">
+            <h2 style={{ color: '#FF9F55' }}>2023</h2>
+            <p style={{ color: '#888' }}>Creating my first C project, a management system called "Park your car here".</p>
+          </div>
+        </div>
+        <div className='container left'>
+          <div class="content">
+            <h2 style={{ color: '#FF9F55' }}>2024</h2>
+            <p style={{ color: '#888' }}>Creating my first C++ project, a management system called "Library".</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2 style={{ color: '#FF9F55' }}>2025</h2>
+            <p style={{ color: '#888' }}>Developing my first mobile application with teammates using Flutter for Softinsa.</p>
+          </div>
+        </div>
+      </div>
 
       <br />
       <hr style={{ border: '1px solid #888', marginTop: '2em' }} />
